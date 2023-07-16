@@ -25,7 +25,7 @@ Only 1771 contains an even number of digits.
 /*
 steps: 
 1) get every number from array
-2) make a function to count the totoal digits of the nubmer (we can do by dividing the number unitil it becomes zero, use while loop )
+2) make a function to count the total digits of the nubmer (we can do by dividing the number until it becomes zero, use while loop )
 3) check if total digits are even (this can be done by % operator if num % 2 == 0 then even number )
 4) return the count of total even number digits
 */ 
@@ -37,7 +37,7 @@ const findNumbers = (nums) => {
             count = count + 1
             value = Math.floor(value / 10)
         }
-        if(count % 2 == 0){
+        if(count % 2 === 0){
             return true
         }
     }
