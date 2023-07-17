@@ -14,4 +14,5 @@ function binarySearch(array, target){
     return "not found"
 }
 
-console.log(binarySearch([1,2,5,6,7,8,99,144,565,899], 99))
+// console.log(binarySearch([1,2,5,6,7,8,99,144,565,899], 99))
+console.log(binarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 34, 39, 40, 55, 57, 67, 69, 71, 73, 75], 5))
