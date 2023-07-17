@@ -7,22 +7,23 @@ function orderAgnosticBS(array, target){
     }
     while (start <= end){
         let middleIndex = Math.floor((start + end) / 2)
+
+        if(target === array[middleIndex]){
+            return middleIndex
+        }
+
         if(isAsc){
             if(target < array[middleIndex]){
                 end = end - 1
             } else if(target > array[middleIndex]){
                 start = start + 1
-            } else {
-                return middleIndex
             }
-        }
+
         if (!isAsc) {
             if (target < array[middleIndex]) {
                 end = end + 1
             } else if (target > array[middleIndex]) {
                 start = start - 1
-            } else {
-                return middleIndex
             }
         }
     }
